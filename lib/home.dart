@@ -33,11 +33,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
               Tab(text: "CALLS"),
             ]),
         actions: [
-          Icon(Icons.search),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8.0),
-            child: Icon(Icons.more_vert),
-          )
+          IconButton(onPressed: () {}, icon: Icon(Icons.search)),
+          IconButton(onPressed: () {}, icon: Icon(Icons.more_vert))
         ],
       ),
       body: TabBarView(
@@ -48,14 +45,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
           Status(),
           Calls(),
         ],
-      ),
-      floatingActionButton: FloatingActionButton(
-        backgroundColor: Theme.of(context).accentColor,
-        onPressed: () {},
-        child: Icon(
-          Icons.message,
-          color: Colors.white,
-        ),
       ),
     );
   }

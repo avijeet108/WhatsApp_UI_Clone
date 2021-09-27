@@ -5,10 +5,7 @@ class Camera extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        child: Text(
-          "CAMERA",
-          style: TextStyle(fontSize: 20.0),
-        ),
+        color: Colors.black,
       ),
     );
   }
